@@ -1,0 +1,215 @@
+{
+  "accessors": [
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 34773,
+      "max": [
+        0.1885869950056076,
+        5.41599702835083,
+        0.2659739851951599
+      ],
+      "min": [
+        -0.25421199202537537,
+        5.006630897521973,
+        -0.18092699348926544
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 417276,
+      "componentType": 5126,
+      "count": 34773,
+      "max": [
+        0.9999828934669495,
+        0.999906599521637,
+        0.9999114871025085
+      ],
+      "min": [
+        -0.9997837543487549,
+        -0.9999834895133972,
+        -0.9999923706054688
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 34773,
+      "max": [
+        0.9933149814605713,
+        0.9947230219841003
+      ],
+      "min": [
+        0.0038509999867528677,
+        0.0032850001007318497
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 195000,
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "Minneapolis Institute of Art (https://sketchfab.com/artsmia)",
+      "license": "CC0-1.0 (http://creativecommons.org/publicdomain/zero/1.0/)",
+      "source": "https://sketchfab.com/3d-models/netsuke-curled-rat-eccf468de31a4cf2bdc8c88a7ab4a8da",
+      "title": "Netsuke - curled rat"
+    },
+    "generator": "Sketchfab-12.64.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 780000,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 278184,
+      "byteOffset": 780000,
+      "byteStride": 8,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 834552,
+      "byteOffset": 1058184,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 1892736,
+      "uri": "scene.bin"
+    }
+  ],
+  "images": [
+    {
+      "uri": "textures/171219_mia337_037576_500_65Kmesh_OBJ_baseColor.jpeg"
+    },
+    {
+      "uri": "textures/171219_mia337_037576_500_65Kmesh_OBJ_metallicRoughness.png"
+    },
+    {
+      "uri": "textures/171219_mia337_037576_500_65Kmesh_OBJ_emissive.jpeg"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "emissiveFactor": [
+        0.2039341897,
+        0.2039341897,
+        0.2039341897
+      ],
+      "emissiveTexture": {
+        "index": 2
+      },
+      "name": "171219_mia337_037576_500_65Kmesh_OBJ",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0.0,
+        "metallicRoughnessTexture": {
+          "index": 1
+        }
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Object_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "matrix": [
+        0.2935063205078414,
+        0.023454488440183285,
+        -0.040558715900806945,
+        0.0,
+        -0.030050013997140468,
+        -0.10316626001982682,
+        -0.2771187536843023,
+        0.0,
+        -0.035946058841995754,
+        0.27775473422253505,
+        -0.09950513341294703,
+        0.0,
+        0.5316110849380493,
+        1.8142281770706177,
+        -0.34272390604019126,
+        1.0
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        2
+      ],
+      "name": "171219_mia337_037576_500_65Kmesh_OBJ.obj.cleaner.materialmerger.gles"
+    },
+    {
+      "mesh": 0,
+      "name": "Object_2"
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Sketchfab_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
+    },
+    {
+      "sampler": 0,
+      "source": 2
+    }
+  ]
+}

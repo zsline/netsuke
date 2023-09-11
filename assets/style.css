@@ -1,0 +1,252 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+**,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Hina Mincho';
+    margin: 0;
+    color: #fff;
+}
+
+a {
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+}
+
+.flag {
+    position: absolute;
+    top: -100px;
+    right: 0;
+    background-image: url(img/flag.svg);
+    width: 80px;
+    height: 320px;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 118.8%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-320px);
+    animation: top 1s ease-in;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes top {
+    from{
+        transform: translateY(-320px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
+.netsuke {
+    background-image: url(./img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.wrapper {
+    position: relative;
+}
+
+.container {
+    max-width: 1300px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.header {
+    padding: 14px 30px;
+}
+
+.netsuke__inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.netsuke__inner-item {
+    position: relative;
+    width: 48vw;
+    text-align: right;
+    flex: 1 0;
+}
+
+.netsuke__item-left {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    height: 80vh;
+    padding-left: 80px;
+}
+
+.netsuke__inner-dots {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 100px;
+}
+
+.netsuke__inner-dot {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #fff;
+    animation: blur 7s ease-in-out infinite;
+}
+
+.netsuke__inner-dot:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+.netsuke__inner-dot:nth-child(3) {
+    animation-delay: 1s;
+}
+
+.netsuke__inner-dot:nth-child(4) {
+    animation-delay: 1.5s;
+}
+
+.netsuke__inner-dot:nth-child(5) {
+    animation-delay: 2s;
+}
+
+.netsuke__inner-dot:nth-child(6) {
+    animation-delay: 2.5s;
+}
+
+.netsuke__inner-dot:nth-child(7) {
+    animation-delay: 3s;
+}
+
+.netsuke__inner-dot:nth-child(8) {
+    animation-delay: 3.5s;
+}
+
+.netsuke__inner-model {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 20%;
+}
+
+model-viewer {
+    width: 500px;
+    height: 500px;
+}
+
+.netsuke__inner-text {
+    pointer-events: none;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 118.8%;
+    text-transform: lowercase;
+}
+
+.netsuke__inner-title {
+    pointer-events: none;
+    color: #FA8282;
+    font-family: Hina Mincho;
+    font-size: 240px;
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 9vh;
+}
+
+.netsuke__inner-subtitle {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.netsuke__btn {
+    position: absolute;
+    padding: 10px 70px;
+    border-radius: 25px;
+    background-color: #C1291F;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    text-transform: uppercase;
+    max-width: 100px;
+    text-align: center;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: all 0.3s;
+}
+
+.netsuke__btn:hover {
+    background-color: #d64c42;
+}
+
+
+.dec-left-1 {
+    position: absolute;
+    width: 2px;
+    height: 70vh;
+    background-color: #fff;
+    left: 0;
+    top: 40px;
+}
+
+.dec-left-2 {
+    position: absolute;
+    width: 2px;
+    height: 70vh;
+    background-color: #fff;
+    left: 16px;
+    top: 56px;
+}
+
+.dec-top-1 {
+    position: absolute;
+    height: 2px;
+    width: 60vw;
+    background-color: #fff;
+    top: 80px;
+    left: -40px;
+}
+
+.dec-top-2 {
+    position: absolute;
+    height: 2px;
+    width: 60vw;
+    background-color: #fff;
+    top: 96px;
+    left: -24px;
+
+}
+
+@keyframes blur {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
