@@ -40,6 +40,11 @@ a {
     animation: top 1s ease-in;
     animation-delay: 2s;
     animation-fill-mode: forwards;
+    transition: all 0.3s;
+}
+.flag:hover{
+    transform: translateY(-320px);
+
 }
 
 @keyframes top {
