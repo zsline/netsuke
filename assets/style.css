@@ -42,16 +42,18 @@ a {
     animation-fill-mode: forwards;
     transition: all 0.3s;
 }
-.flag:hover{
+
+.flag:hover {
     transform: translateY(-320px);
 
 }
 
 @keyframes top {
-    from{
+    from {
         transform: translateY(-320px);
     }
-    to{
+
+    to {
         transform: translateY(0);
     }
 }
@@ -83,6 +85,13 @@ a {
     display: flex;
     justify-content: space-between;
     gap: 20px;
+    height: 100vh;
+}
+
+@media (max-width:900px) {
+    .netsuke__inner {
+        flex-direction: column;
+    }
 }
 
 .netsuke__inner-item {
@@ -93,12 +102,14 @@ a {
 }
 
 .netsuke__item-left {
+    box-sizing: border-box;
     display: flex;
     align-items: center;
     width: 100%;
     justify-content: space-between;
     height: 80vh;
     padding-left: 80px;
+    z-index: 1;
 }
 
 .netsuke__inner-dots {
@@ -151,9 +162,33 @@ a {
     top: 20%;
 }
 
+@media (max-width:900px) {
+    .netsuke__inner-model {
+        top: 0;
+        width: 100vw;
+    }
+
+    .netsuke__item-right {
+        width: 100%;
+        position: absolute;
+        bottom: 90px;
+        z-index: 0;
+    }
+    .netsuke__item-left{
+        padding-left: 30px;
+    }
+
+}
+
 model-viewer {
     width: 500px;
     height: 500px;
+}
+
+@media (max-width:900px) {
+    model-viewer {
+        width: 80vw;
+    }
 }
 
 .netsuke__inner-text {
@@ -165,14 +200,27 @@ model-viewer {
     text-transform: lowercase;
 }
 
+@media (max-width:1120px) {
+    .netsuke__inner-text {
+        display: none;
+    }
+}
+
 .netsuke__inner-title {
     pointer-events: none;
     color: #FA8282;
     font-family: Hina Mincho;
-    font-size: 240px;
+    font-size: calc(160px + 80 * (100vw / 1240));
     font-style: normal;
     font-weight: 400;
     margin-top: 9vh;
+}
+
+@media (max-width:1060px) {
+    .netsuke__inner-title {
+        font-size: calc(120px + 80 * (100vw / 1060));
+
+    }
 }
 
 .netsuke__inner-subtitle {
